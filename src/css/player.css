@@ -62,7 +62,7 @@
   background-color: rgba(255,255,255,.5);
 }
 
-.riverine-title ul, .riverine-time-holder {
+.riverine-title ul, .riverine-time-handler {
   font-family: 'Ubuntu Mono', monospace;
   color: rgba(0, 0, 0, 0.6);
   font-size: 16px;
@@ -72,7 +72,7 @@
   pointer-events: none;
 }
 
-.riverine-time-holder {
+.riverine-time-handler {
   right: 15px;
 }
 

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timeline snapshots should match the snapshot with required props 1`] = `
+<div
+  className="riverine-progress"
+  onMouseDown={[Function]}
+  onMouseMove={[Function]}
+  onMouseOut={[Function]}
+>
+  <div
+    className="riverine-seek-bar"
+    style={
+      Object {
+        "width": "20px",
+      }
+    }
+  >
+    <div
+      className="riverine-play-bar"
+      onMouseDown={[Function]}
+      style={
+        Object {
+          "paddingLeft": "40px",
+        }
+      }
+    />
+  </div>
+</div>
+`;

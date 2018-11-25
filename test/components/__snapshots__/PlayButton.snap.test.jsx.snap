@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlayButton snapshots should match the snapshot with required props 1`] = `
+<li
+  className="play-button-container"
+>
+  <a
+    className="riverine-play"
+    onClick={[Function]}
+  >
+    <i
+      className="fa fa-play"
+    />
+  </a>
+</li>
+`;

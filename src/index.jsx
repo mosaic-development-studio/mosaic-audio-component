@@ -1,12 +1,12 @@
 import './css/player.css';
 import React from 'react';
 import { render } from 'react-dom';
-import Riverine from './js/components/Riverine';
+import MosaicAudioComponent from './js/components/MosaicAudioComponent';
 
 const Root = () => {
     return (
         <div>
-            <Riverine
+            <MosaicAudioComponent
                 source="audio/1.mp3"
             />
         </div>

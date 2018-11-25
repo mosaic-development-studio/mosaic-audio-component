@@ -33,8 +33,8 @@ AudioNode.propTypes = {
     loop: PropTypes.bool,
     movePlayHead: PropTypes.func.isRequired,
     preload: PropTypes.string,
-    updateDuration: PropTypes.func.isRequired,
     source: PropTypes.string.isRequired,
+    updateDuration: PropTypes.func.isRequired,
     updateTime: PropTypes.func.isRequired
 };
 

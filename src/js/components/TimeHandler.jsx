@@ -3,7 +3,7 @@ import React from 'react';
 
 export const TimeHandler = props => {
     return (
-        <div className="riverine-time-holder">
+        <div className="riverine-time-handler">
             <span>{props.currentTime} / {props.duration}</span>
         </div>
     );

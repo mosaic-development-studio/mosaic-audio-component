@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AudioNode snapshots should match the snapshot with all props 1`] = `
+<audio
+  id="audio-node"
+  loop={true}
+  onDurationChange={[Function]}
+  onTimeUpdate={[Function]}
+  preload="auto"
+>
+  <source
+    src="../audio/test.mp3"
+  />
+</audio>
+`;
+
+exports[`AudioNode snapshots should match the snapshot with required props 1`] = `
+<audio
+  id={null}
+  loop={false}
+  onDurationChange={[Function]}
+  onTimeUpdate={[Function]}
+  preload="auto"
+>
+  <source
+    src="../audio/test.mp3"
+  />
+</audio>
+`;

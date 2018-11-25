@@ -11,7 +11,7 @@ import { Timeline } from './Timeline';
 import { DEFAULT_HOVER_WIDTH, DEFAULT_STATE } from '../lib/constants';
 import { createTimeString, handleOffsetParent, handlePaddingResize } from '../lib/utilities';
 
-export class Riverine extends Component {
+export class MosaicAudioComponent extends Component {
     constructor(props) {
         super(props);
         this.state = DEFAULT_STATE;
@@ -185,17 +185,17 @@ export class Riverine extends Component {
     }
 }
 
-Riverine.defaultProps = {
+MosaicAudioComponent.defaultProps = {
     audioNodeId: null,
     loop: false,
     preload: 'auto'
 };
 
-Riverine.propTypes = {
+MosaicAudioComponent.propTypes = {
     audioNodeId: PropTypes.string,
     loop: PropTypes.bool,
     preload: PropTypes.string,
     source: PropTypes.string.isRequired
 };
 
-export default Riverine;
+export default MosaicAudioComponent;

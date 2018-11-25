@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Controls snapshots should match the snapshot with required props 1`] = `
+<div
+  className="riverine-controls"
+>
+  <button
+    className="test-button"
+    onClick={[Function]}
+  />
+</div>
+`;

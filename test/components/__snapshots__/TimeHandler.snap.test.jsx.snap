@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimeHandler snapshots should match the snapshot with required props 1`] = `
+<div
+  className="riverine-time-handler"
+>
+  <span>
+    00:00
+     / 
+    02:32
+  </span>
+</div>
+`;

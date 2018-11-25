@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PauseButton snapshots should match the snapshot with required props 1`] = `
+<li
+  className="pause-button-container"
+>
+  <a
+    className="riverine-pause"
+    onClick={[Function]}
+  >
+    <i
+      className="fa fa-pause"
+    />
+  </a>
+</li>
+`;

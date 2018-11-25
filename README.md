@@ -1,2 +1,2 @@
-# mosaic-audio-component
-A React wrapper for the HTML audio tag with playback controls.
+# mosaic-audio-docs
+Docs for the mosaic audio component.

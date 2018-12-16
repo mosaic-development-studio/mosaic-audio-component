@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-export const TimeHandler = props => {
+export const TimeHandler = ({ currentTime, duration }) => {
     return (
         <div className="riverine-time-handler">
-            <span>{props.currentTime} / {props.duration}</span>
+            <span>{currentTime} / {duration}</span>
         </div>
     );
 };

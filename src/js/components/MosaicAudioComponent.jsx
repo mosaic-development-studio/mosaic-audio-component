@@ -37,6 +37,7 @@ export class MosaicAudioComponent extends Component {
 
         window.addEventListener('mouseup', this.stopDraggingPlayHead, false);
         window.addEventListener('resize', this.handleWindowResize, false);
+
         this.audioNode.addEventListener('timeupdate', this.movePlayHead, false);
     }
 
@@ -145,23 +146,38 @@ export class MosaicAudioComponent extends Component {
     }
 
     render() {
+        const {
+            audioNodeId,
+            loop,
+            preload,
+            source
+        } = this.props;
+
+        const {
+            formattedCurrentTime,
+            formattedDuration,
+            hoverWidth,
+            playHeadPaddingLeft,
+            playing
+        } = this.state;
+
         return (
             <div>
                 <div className="riverine-player">
                     <div className="riverine-type-single">
                         <div className="riverine-gui riverine-interface riverine-player">
                             <AudioNode
-                                audioNodeId={this.props.audioNodeId}
+                                audioNodeId={audioNodeId}
                                 createRef={this.createRef}
                                 movePlayHead={this.movePlayHead}
-                                loop={this.props.loop}
-                                preload={this.props.preload}
-                                source={this.props.source}
+                                loop={loop}
+                                preload={preload}
+                                source={source}
                                 updateDuration={this.updateDuration}
                                 updateTime={this.updateTime}
                             />
                             <Controls>
-                                {this.state.playing
+                                {playing
                                     ? <PauseButton pause={this.pause} />
                                     : <PlayButton play={this.play} />}
                             </Controls>
@@ -170,12 +186,12 @@ export class MosaicAudioComponent extends Component {
                                 handleMouseDown={this.startDraggingPlayHead}
                                 handleMouseMove={this.setHoverWidth}
                                 handleMouseOut={this.setDefaultHoverWidth}
-                                hoverWidth={this.state.hoverWidth}
-                                playHeadPaddingLeft={this.state.playHeadPaddingLeft}
+                                hoverWidth={hoverWidth}
+                                playHeadPaddingLeft={playHeadPaddingLeft}
                             />
                             <TimeHandler
-                                currentTime={this.state.formattedCurrentTime}
-                                duration={this.state.formattedDuration}
+                                currentTime={formattedCurrentTime}
+                                duration={formattedDuration}
                             />
                         </div>
                     </div>

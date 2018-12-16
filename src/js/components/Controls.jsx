@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-export const Controls = props => {
+export const Controls = ({ children }) => {
     return (
         <div className="riverine-controls">
-            {props.children}
+            {children}
         </div>
     );
 };

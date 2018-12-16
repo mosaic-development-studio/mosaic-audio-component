@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-export const PauseButton = props => {
+export const PauseButton = ({ pause }) => {
     return (
         <li className="pause-button-container">
-            <a className="riverine-pause" onClick={props.pause}>
+            <a className="riverine-pause" onClick={pause}>
                 <i className="fa fa-pause"></i>
             </a>
         </li>

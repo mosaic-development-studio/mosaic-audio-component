@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-export const PlayButton = props => {
+export const PlayButton = ({ play }) => {
     return (
         <li className="play-button-container">
-            <a className="riverine-play" onClick={props.play}>
+            <a className="riverine-play" onClick={play}>
                 <i className="fa fa-play"></i>
             </a>
         </li>

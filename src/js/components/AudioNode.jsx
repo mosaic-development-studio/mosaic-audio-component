@@ -3,20 +3,29 @@ import React from 'react';
 
 import { REFS } from '../lib/constants';
 
-export const AudioNode = props => {
+export const AudioNode = ({
+    audioNodeId,
+    createRef,
+    loop,
+    movePlayHead,
+    preload,
+    source,
+    updateDuration,
+    updateTime
+}) => {
     return (
         <audio
-            id={props.audioNodeId}
-            loop={props.loop}
-            onDurationChange={props.updateDuration}
+            id={audioNodeId}
+            loop={loop}
+            onDurationChange={updateDuration}
             onTimeUpdate={() => {
-                props.updateTime();
-                props.movePlayHead();
+                updateTime();
+                movePlayHead();
             }}
-            preload={props.preload}
-            ref={node => props.createRef(REFS.AUDIO, node)}
+            preload={preload}
+            ref={node => createRef(REFS.AUDIO, node)}
         >
-            <source src={props.source} />
+            <source src={source} />
         </audio>
     );
 };
